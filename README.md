@@ -4,7 +4,7 @@ A standalone AI chatbot that answers visitors' questions about Nadeem, by text o
 (Gemini-style: tap the orb, talk, it answers out loud, then listens again).
 
 Everything runs on **Groq**:
-- **LLM** (answers): `llama-3.3-70b-versatile` (change with `GROQ_CHAT_MODEL`)
+- **LLM** (answers): `openai/gpt-oss-120b` (change with `GROQ_CHAT_MODEL`)
 - **Speech-to-text**: `whisper-large-v3-turbo`
 - **Text-to-speech**: `canopylabs/orpheus-v1-english` (English voices)
 

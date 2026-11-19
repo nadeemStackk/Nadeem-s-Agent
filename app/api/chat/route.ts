@@ -45,7 +45,10 @@ export async function POST(req: Request) {
       model: MODELS.chat,
       stream: true,
       temperature: 0.4,
-      max_tokens: voice ? 300 : 700,
+      // gpt-oss is a reasoning model: keep thinking short for fast replies,
+      // and leave room for the reasoning tokens inside the limit
+      reasoning_effort: 'low',
+      max_tokens: voice ? 800 : 1500,
       messages: [{ role: 'system', content: buildSystemPrompt(voice) }, ...messages],
     }),
   });

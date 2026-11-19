@@ -1,7 +1,7 @@
 export const GROQ_BASE = 'https://api.groq.com/openai/v1';
 
 export const MODELS = {
-  chat: process.env.GROQ_CHAT_MODEL || 'llama-3.3-70b-versatile',
+  chat: process.env.GROQ_CHAT_MODEL || 'openai/gpt-oss-120b',
   stt: process.env.GROQ_STT_MODEL || 'whisper-large-v3-turbo',
   tts: process.env.GROQ_TTS_MODEL || 'canopylabs/orpheus-v1-english',
   voice: process.env.GROQ_TTS_VOICE || 'troy',
